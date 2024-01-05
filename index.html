@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- to place icon -->
+    <link rel="icon" type="image/x-icon"
+        href="data:image/png;base64,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">
+
+    <!-- google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Beau+Rivage&family=Borel&family=Cormorant+Garamond:wght@500&family=DM+Serif+Display&family=Denk+One&family=Domine&family=Nosifer&family=Rancho&family=Sacramento&family=Vollkorn&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- nav tag is used to create navigation bar -->
+        <nav class="nvbar">
+            <img class="logo" src="./1.jpg" alt="logo">
+            <ul>
+                <li class="listitem"><a class="links" href="#home">HOME</a></li>
+                <li class="listitem"><a class="links" href="#about">ABOUT</a></li>
+                <li class="listitem"><a class="links" href="#skill">SKILL</a></li>
+                <li class="listitem"><a class="links" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="title">
+                <h1 class="title_h1">Im Ana <span class="lastname">Steel</span></h1>
+                <p>This is my Official Portfolio website to describe all <br> Details and work experience in Web
+                    Development.</p>
+
+                <a class="download"
+                    href="https://drive.google.com/file/d/1x1dns4K3eYmZS6q0QmiroO7Qq_xYWRKu/view?usp=sharing" download
+                    target="_blank">DOWNLOAD CV</a>
+
+
+            </div>
+            <div class="title-img">
+                <img id="shape" src="./SHAPE-removebg-preview.png" alt="">
+                <img id="girl" src="./2-removebg-preview.png" alt="">
+            </div>
+
+        </section>
+
+        <section id="about">
+            <div class="heading">
+                <h2>About me</h2>
+                <span>Introduction</span>
+
+            </div>
+            <div class="about-content">
+
+                <!-- image -->
+
+                <div class="about-img">
+                    <img src="./3.jpg" alt="aboutimage">
+
+                </div>
+                <!-- content -->
+                <div class="about-details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste labore unde tenetur
+                        veniam odit dolores? Pariatur animi fuga asperiores perspiciatis possimus dicta obcaecati
+                        similique, distinctio aliquam quod voluptatum yeaque.</p>
+                    <div class="information">
+                        <div class="info-box">
+                            <i class="fa-solid fa-user fa-beat"></i>
+                            <span>Ana Steel</span>
+                        </div>    
+                                <div class="info-box">
+                                    <i class="fa-solid fa-phone fa-beat"></i>
+                                    <span>123456767977</span>
+                                </div>    
+                                        <div class="info-box">
+                                            <i class="fa-solid fa-envelope fa-beat"></i>
+                                            <span>anasteel@gmail.com</span>
+                                        </div>   
+                                                <div class="info-box">
+                                                    <i class="fa-brands fa-github fa-beat"></i> <span>anasteel123</span>
+                                                </div>
+                    </div>
+                </div>
+        </section>
+        <section id="skill">
+            <div class="heading">
+                <h2>Skills</h2>
+                <span>My Skills</span>
+            </div>
+            <div class="skill-content">
+                <!-- progress -->
+                <div class="progress-bar">
+                    <div class="bar-container">
+                        <h3>HTML</h3>
+                        <span>95%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar html-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>CSS</h3>
+                        <span>88%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar css-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>REACT</h3>
+                        <span>89%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar react-bar"></div>
+                    </div>
+                    <div class="bar-container">
+                        <h3>JS</h3>
+                        <span>85%</span>
+                        <div class="base-bar"></div>
+                        <div class="base-bar js-bar"></div>
+                    </div>
+                </div>
+
+                <!-- img -->
+                <div class="skill-img">
+                    <img src="./photo_2023-07-28_15-07-47.jpg" alt="imageskill">
+                </div>
+
+
+            </div>
+
+        </section>
+        <section id="contact">
+            <div class="heading">
+                <h2>Contact</h2>
+                <span>My Contact</span>
+            </div>
+            <div class="icon-set">
+                <div class="icon">
+                    <a href="">
+                        <i class="fa-brands fa-linkedin "></i>
+                    </a>
+                </div>
+                    <div class="icon">
+                        <a href="">
+                            <i class="fa-brands fa-github "></i>
+                        </a>
+                    </div>
+                        <div class="icon">
+                            <a href="">
+                                <i class="fa-brands fa-twitter "></i>
+                            </a>
+                        </div>
+                            <div class="icon">
+                                <a href="">
+                                    <i class="fa-brands fa-whatsapp "></i>
+                                </a>
+                            </div>
+                                <div class="icon">
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram "></i>
+                                    </a>
+                                </div>
+                                    <div class="icon">
+                                        <a href="">
+                                            <i class="fa-brands fa-facebook "></i>
+                                        </a>
+                                    </div>
+
+            </div>
+
+
+        </section>
+        <section>
+
+        </section>
+
+
+    <footer>
+        <p style="text-align: center;font-weight: bold;">&copy; My Portfolio Design 2023, All Rights Reserved &reg; Ana Steel
+
+        </p>
+        <div class="up-arrow">
+            <a href="#container">
+                <i class="fa-solid fa-arrow-up fa-2x"></i>
+            </a>
+
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
